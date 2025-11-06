@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+    background-color: #fff9f2;
+    color: #333333;
+    font-family: "Nunito", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  :root {
+    --background: 36 100% 97.6%;
+    --foreground: 0 0% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    --primary: 16 100% 60.2%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 64% 48%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 35 100% 55.7%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 86%;
+    --input: 0 0% 86%;
+    --ring: 16 100% 60.2%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 16 100% 60.2%;
+    --chart-2: 174 64% 48%;
+    --chart-3: 35 100% 55.7%;
+    --chart-4: 260 70% 60%;
+    --chart-5: 120 60% 50%;
+  }
+
+  .story-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid hsl(var(--primary));
+  }
+
+  .nav-item.active {
+    color: hsl(var(--primary));
+    border-bottom: 2px solid hsl(var(--primary));
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+  }
+}
